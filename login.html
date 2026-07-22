@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="icons8-quiz-50.png" height="50px" width="50px">
+        <h2>Welcome Back!</h2>
+        <p>Login to continue</p>
+        <form>
+            <input type="email" placeholder="Enter your email"><br>
+            <input type="password" placeholder="Enter your password">
+        </form>
+        <div class="mart">
+            <input type="checkbox">Remember me
+            <p>Forgot password?</p>
+        </div>
+        <div>
+            <button onclick="log()">Login</button>
+        </div>
+    </div>
+</body>
+<script>
+function log(){
+    window.location.href="quiz.html";
+}
+</script>
+</html>

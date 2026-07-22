@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f3f6fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    padding: 25px;
+}
+
+h2{
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 15px 0;
+}
+
+.mart{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rest{
+    margin-left: auto;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.young{
+    margin-top: 20px;
+}
+
+.young p{
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.young label{
+    font-size: 18px;
+    color: #222;
+}
+
+input{
+    margin-right: 10px;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border: 2px solid #e0e0e0;
+    padding: 14px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option:hover{
+    background: #eaf3ff;
+    border-color: #0d6efd;
+}
+
+.used{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.used button{
+    width: 48%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #0d6efd;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.used button:hover{
+    background: #084298;
+}
+
+@media (max-width:600px){
+
+    .container{
+        padding: 18px;
+    }
+
+    .mart{
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .rest{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .used{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .used button{
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>Quiz App</h2>
+        <hr>
+    <div class="mart">
+        <img src="gemini-svg (1).jpg" height="30px" width="30px">
+        <p>Quiz App</p>
+
+        <p class="rest">Score 2/10</p>
+    </div>
+    <hr>
+    <div class="young">
+        <p>Question 3 of 5</p>
+        <label>Which planet is known as the red Planet?</label><br>
+            <label class="option">
+        <input type="radio" value="Earth" name="planet"> Earth
+    </label><br>
+
+    <label class="option">
+        <input type="radio" value="Mars" name="planet"> Mars
+    </label><br>
+
+    <label class="option">
+        <input type="radio" value="Jupiter" name="planet"> Jupiter
+    </label><br>
+
+    <label class="option">
+        <input type="radio" value="Venus" name="planet"> Venus
+    </label>
+
+    </div>
+    <div class="used">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </div>
+    </div> 
+</body>
+<script src="script.js"></script>
+</html>
